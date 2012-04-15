@@ -28,23 +28,13 @@ class Page
 	private $title;
 
 	/**
-	 * @ORM\Column(type="string", length=255, nullable=true)
-	 */
-	private $description;
-
-	/**
-	 * @ORM\Column(type="string", length=255, nullable=true)
-	 */
-	private $keywords;
-
-	/**
-	 * @ORM\Column(type="string", length=50, nullable=true)
-	 */
-	private $author;
-
-	/**
 	 * @ORM\Column(type="text", nullable=true)
 	 */
 	private $content;
+
+	/**
+	 * @ORM\OneToOne(targetEntity="PageMeta", mappedBy="page")
+	 */
+	private $meta;
 
 }
