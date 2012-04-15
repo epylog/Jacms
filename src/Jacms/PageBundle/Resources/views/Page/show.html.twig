@@ -2,4 +2,18 @@
 
 {% block title%}{{ page.title }}{% endblock %}
 
+{% block metas %}
+{% if page.meta is not null %}
+{% if page.meta.author is not null %}
+		<meta name="Author" content="{{ page.meta.author }}">
+{% endif %}
+{% if page.meta.description is not null %}
+		<meta name="Description" content="{{ page.meta.description }}">
+{% endif %}
+{% if page.meta.keywords is not null %}
+		<meta name="Keywords" content="{{ page.meta.keywords }}">
+{% endif %}
+{% endif %}
+{% endblock%}
+
 {% block body %}{{ page.content|raw }}{% endblock %}
