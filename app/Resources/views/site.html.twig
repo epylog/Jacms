@@ -11,6 +11,6 @@
 		<link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 	</head>
 	<body>
-{% block body %}{% endblock %}
+{% block body %}{{ knp_menu_render('JacmsMenuBundle:Builder:mainMenu') }}{% endblock %}
 	</body>
 </html>

@@ -16,4 +16,4 @@
 {% endif %}
 {% endblock%}
 
-{% block body %}{{ page.content|raw }}{% endblock %}
+{% block body %}{{ parent() }}{{ page.content|raw }}{% endblock %}
