@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %}{% endblock %}</title>
+{% block metas %}
+		<meta charset="utf-8">
+{% endblock %}
+{% block stylesheets %}
+		<link rel="stylesheet" href="{{ asset('bundles/app/css/site.css') }}" type="text/css"  media="screen">
+{% endblock %}
+		<link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+	</head>
+	<body>
+{% block body %}{% endblock %}
+	</body>
+</html>
