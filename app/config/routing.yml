@@ -1,3 +1,7 @@
+JacmsMenuBundle:
+    resource: "@JacmsMenuBundle/Resources/config/routing.yml"
+    prefix:   /
+
 JacmsPageBundle:
     resource: "@JacmsPageBundle/Resources/config/routing.yml"
     prefix:   /

@@ -1,0 +1,7 @@
+parameters:
+#    jacms_menu.example.class: Jacms\MenuBundle\Example
+
+services:
+#    jacms_menu.example:
+#        class: %jacms_menu.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
